@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="ip050_teleop" type="patrol_4_points.py" name="patrol_4_points" output="screen">
+    <rosparam file="$(find ip050_teleop)/config/params_a.yaml" command="load" ns="params_a"/>
+    <rosparam file="$(find ip050_teleop)/config/params_b.yaml" command="load" ns="params_b"/>
+    <rosparam file="$(find ip050_teleop)/config/params_c.yaml" command="load" ns="params_c"/>
+    <rosparam file="$(find ip050_teleop)/config/params_d.yaml" command="load" ns="params_d"/>
+  </node>
+
+</launch>
